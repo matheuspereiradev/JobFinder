@@ -19,3 +19,5 @@ const Vaga= db.define('vaga',{
         type:Sequelize.INTEGER
     },
 })
+
+module.exports=Vaga

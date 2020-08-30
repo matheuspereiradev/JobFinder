@@ -1,9 +1,12 @@
 const express = require('express')
 const app = express()
+const bodyParser = require('body-parser')
 
 app.listen(3000, function(){
     console.log('express esta rodando na porta:'+3000)
 })
+
+app.use(bodyParser.urlencoded({extended:false}));
 
 const db = require('./db/conexao')
 //db
@@ -28,3 +31,5 @@ app.get('/',(req, res)=>{
 
 //e executa ao inves de node app.js executa assim npm run dev
 
+//chamando as rotas da vaga
+app.use('/vaga',require('./Routes/RouteVaga'))
