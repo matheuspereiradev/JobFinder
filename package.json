@@ -1,0 +1,33 @@
+{
+  "name": "job_finder",
+  "version": "1.0.0",
+  "description": "portal para exibir vagas de emprego",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheuspereiradev/JobFinder.git"
+  },
+  "keywords": [
+    "job",
+    "jobs"
+  ],
+  "author": "matheuspereiradev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheuspereiradev/JobFinder/issues"
+  },
+  "homepage": "https://github.com/matheuspereiradev/JobFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "sequelize": "^6.3.4",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
