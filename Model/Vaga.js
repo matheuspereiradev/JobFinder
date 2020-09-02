@@ -2,7 +2,7 @@ const Sequelize  = require('sequelize')
 
 const db = require('../db/conexao')
 
-const Vaga= db.define('vaga',{
+const Vaga= db.define('vagas',{
     nmVaga:{
         type:Sequelize.STRING
     },
@@ -18,6 +18,9 @@ const Vaga= db.define('vaga',{
     novo:{
         type:Sequelize.INTEGER
     },
+    descricao:{
+        type:Sequelize.STRING
+    }
 })
 
 module.exports=Vaga

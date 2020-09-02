@@ -10,10 +10,10 @@ rota.get('/teste',(req,res)=>{
 
 rota.post('/add',(req,res)=>{
     
-    let{nmVaga,salario,empresa,email,novo}= req.body;
+    let{nmVaga,salario,empresa,email,novo,descricao}= req.body;
 
     vaga.create({
-        nmVaga,salario,empresa,email,novo
+        nmVaga,salario,empresa,email,novo,descricao
     })
       .then(()=>{
           res.redirect('/')
